@@ -28,9 +28,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     _preCacheImages(context);
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Feed the cat',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.orange,
       ),
       home: const MainPage(title: 'Feed the cat'), //
     );
@@ -68,8 +68,6 @@ class _MainPage extends StatefulWidget { //_ значит что класс бу
   State<_MainPage> createState() => _MainPageState();
   //
 }
-
-
 
 class _MainPageState extends State<_MainPage> with SingleTickerProviderStateMixin {
   //late - говорим, что мы инициализируем поле до его использования
